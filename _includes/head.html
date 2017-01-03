@@ -1,0 +1,33 @@
+<head>
+  <meta charset='utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta content="{{ site.description }}" name='description' />
+  <meta content='{{ site.title }}' name='author' />
+  <!-- Facebook metadata -->
+  <meta content="{{ site.title }}" property="og:site_name">
+  <meta content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" property="og:title">
+  <meta content="website" property="og:type">
+  <meta content="{{ site.description }}" property="og:description">
+  <meta content="{{ site.url }}" property="og:url">
+  <meta content="{{ "/img/logo.png" | prepend: site.baseurl | prepend: site.url }}" property="og:image">
+  <!-- Twitter metadata -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="{{ site.title }}">
+  <meta name="twitter:creator" content="{{ site.title }}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+  <meta name="twitter:url" content="{{ site.url }}">
+  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:image:src" content="{{ "/img/logo.png" | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- MUI -->
+  <link href="//cdn.muicss.com/mui-0.9.7/css/mui.min.css" rel="stylesheet" type="text/css" />
+  <script src="//cdn.muicss.com/mui-0.9.7/js/mui.min.js"></script>
+
+  <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}" />
+  <link rel="stylesheet" href="{{ "/css/print.css" | prepend: site.baseurl }}" media="print">
+</head>

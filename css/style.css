@@ -1,0 +1,67 @@
+/**
+ * Body CSS
+ */
+html,
+body {
+  height: 100%;
+}
+
+html,
+body,
+input,
+textarea,
+buttons {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+header ul.mui-list--inline {
+  margin-bottom: 0;
+}
+
+header a {
+  color: white;
+}
+
+header a:hover {
+  color: white;
+}
+
+.main {
+  margin-top: 68px;
+}
+
+#map {
+  position: absolute;
+  background-color: red;
+  top: 68px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#map.home-page {
+  left: 33.3%;
+}
+
+.show-map {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #map.home-page {
+    display: none;
+  }
+  .show-map {
+    display: inherit;
+  }
+}

@@ -1,0 +1,10 @@
+port: 5000
+encoding: utf-8
+title: Taxi Driver Rights
+description: >
+  Explaining regulations on taxi drivers in Chicago
+baseurl: ""
+url: "http://TaxiDriverJusticeProject.github.io"
+
+# Build settings
+markdown: kramdown
